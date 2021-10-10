@@ -1,14 +1,1 @@
-				Useful Sources:
-Misc Device:
-	gist.github.com/17twenty/6313566
-Modules in general:
-	https://linux-kernel-labs.github.io/refs/heads/master/labs/kernel_modules.html
-Kstrtoint:
-	kernel.org/doc/htmldocs/kernel-api/API-kstrtoint.html
-Misc:
-	Slides linked on the project document, as well as the wiki article on othello
-
-To the Grader:
-
-Overall, I think most of the challenges I faced with this project were silly.
-The first big issue I encountered was creating the device, not sure but I read source after source and nothing really seemed to help. I tried a genuine char device, but for some reason it wouldn't register correctly. Eventually I discovered misc devices are char devices and that route was smooth sailing. After that, bulk of the issue was move validation and piece flipping which im sure will be evident from my two huge functions. I admit, there is quite a bit of redundancy in my project, I tried to combine lots of things and ended up falling flat on my face half the time. Rather than struggle to make existing functions have multiple uses I decided it would just be safer to create similar functions and actually have some functionality. 
+Linux driver written for my Operating Systems course: CMSC 421. Uses a linux character driver and the reversi module to recreate the game commonly known as "Othello".
